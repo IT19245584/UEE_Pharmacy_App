@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, Center, NativeBaseProvider } from "native-base";
 import { StyleSheet, Text, View } from 'react-native';
 export const Example = () => {
-  return <Button onPress={() => console.log("hello world")}>PRIMARY</Button>
+  return <Button onPress={() => console.log("he-llo world")}>PRIMARY</Button>
 }
 
 export default function App() {
