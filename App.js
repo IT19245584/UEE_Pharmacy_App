@@ -1,13 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { Button, Center, NativeBaseProvider } from "native-base";
 import { StyleSheet, Text, View } from 'react-native';
+export const Example = () => {
+  return <Button onPress={() => console.log("hello world")}>PRIMARY</Button>
+}
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Example />
+      </Center>
+    </NativeBaseProvider>
   );
 }
 
